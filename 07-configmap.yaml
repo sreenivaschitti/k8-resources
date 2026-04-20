@@ -2,7 +2,7 @@ apiVersion: v1
 kind: configMap
 metadata:
   name: configmap_demo
-
+  namespace: roboshop
 data:
   project: "roboshop"
   trainer: "siva"
