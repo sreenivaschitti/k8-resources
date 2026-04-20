@@ -10,6 +10,6 @@ spec:
       env:
         - name: project
           valueFrom:
-          configMapKeyRef:
-            name: configmap-demo
-            key: project
+            configMapKeyRef:
+              name: configmap-demo
+              key: project
