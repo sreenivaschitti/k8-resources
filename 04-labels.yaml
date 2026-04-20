@@ -4,9 +4,9 @@ metadata:
   name: roboshop
   namespace: roboshop
 
-labels:
-  project: roboshop
-  environment: dev
+  labels:
+    project: roboshop
+    environment: dev
 
 annotations:
   
