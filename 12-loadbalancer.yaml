@@ -14,4 +14,4 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
-    NodePort: 31760
+    nodePort: 31760
