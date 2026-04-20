@@ -8,9 +8,7 @@ spec:
   containers:
     - name: nginx
       image: nginx
-      env:
-        - name: project
-          valueFrom:
-            configMapKeyRef:
-              name: configmap-demo
-              key: project
+      envFrom:
+        - configMapKeyRef:
+            name: configmap-demo
+           
