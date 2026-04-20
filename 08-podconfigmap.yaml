@@ -11,5 +11,5 @@ spec:
         - name: project
           valueFrom:
           configMapKeyRef:
-            name: configmap
+            name: configmap-demo
             key: project
