@@ -12,7 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: efs:fs-e8a95a42 # created efs id
+    volumeHandle: fs-06386149b2689c0b4 # created efs id
 
 
 ---
@@ -39,9 +39,9 @@ spec:
     image: nginx
     volumeMounts:
     - name: html-data
-      mountPath: //usr/share/nginx/html
-  nodeSelector:
-    topology.kubernetes.io/zone: us-east-1a
+      mountPath: /usr/share/nginx/html
+  # nodeSelector:
+  #   topology.kubernetes.io/zone: us-east-1a
         
   volumes:
   - name: html-data
